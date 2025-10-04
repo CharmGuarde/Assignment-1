@@ -1,0 +1,241 @@
+/* all tabs*/
+:root{
+--primary: #c8102e; 
+--accent: #e63946; 
+--bg: #ffffff; 
+--text: #1a1a1a; 
+--max-width: 1100px;
+}
+
+/* background */
+body.home header {
+  height: 100vh;
+  display: table;
+  width: 100%;
+  background: linear-gradient(135deg, #c8102e, #ff4d4d); /* red gradient */
+  color: #fff;
+  text-align: center;
+}
+
+/* vertical */
+body.home .home-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* stacked links */
+body.home .main-nav {
+  list-style: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+body.home .main-nav li {
+  margin: 1rem 0;
+}
+
+/*depth to make it more appealing*/
+body.home .main-nav a {
+  display: inline-block;
+  padding: 12px 30px;
+  background: rgba(255,255,255,0.1); /* subtle box behind link */
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+body.home .main-nav a:hover {
+  background: #fff;
+  color: #c8102e;
+}
+
+/* welcome area */
+body.home .welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+body.home .welcome p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+
+/* this allows the links to be stacked -------------- NAVIGATION LINKS */
+body.home .main-nav {
+  list-style: none;
+  margin: 0 0 2rem 0;  /* space below nav */
+  padding: 0;
+}
+
+body.home .main-nav li {
+  display: block;      /* stacks vertically */
+  margin: 1rem 0;
+}
+
+body.home .main-nav a {
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+body.home .main-nav a:hover {
+  color: #ff6666;
+}
+/*end of navigation*/
+
+/* allows centering for welcome message */
+body.home .welcome h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+body.home .welcome p {
+  font-size: 1.2rem;
+}
+
+/* navigation bar for the other pages (about me, contact, projects */
+header {
+  background: #c8102e; /* solid red background */
+  padding: 1rem 0;
+  text-align: center; /* centers the list inline items */
+}
+
+header .main-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .main-nav li {
+  display: inline-block; /* keeps items side by side */
+  margin: 0 1rem;
+}
+
+header .main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header .main-nav a:hover {
+  color: #000000; 
+}
+
+
+main {
+  max-width: 1100px;     
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* welcome - home */
+.welcome {
+  background: #e19090;
+  border: 2px solid #ff4d4d;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Projects */
+.project {
+  border-left: 5px solid #ff4d4d; 
+  background: #fafafa;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+
+
+/* contact area */
+form input,
+form textarea {
+  width: 100%;              /* full width */
+  margin: 8px 0;            /* simple spacing */
+  padding: 10px;            /* space inside */
+  border: 1px solid #ccc;   /* light border */
+  border-radius: 4px;       /* rounded corners */
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #c8102e; /* red border on focus */
+  outline: none;
+}
+
+button {
+  display: inline-block;     /* button stays inline */
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #c8102e; /* red button */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a00;    /* darker red when hovered */
+}
+
+
+
+/* about me page */
+.about-me img.profile-img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+     display: block;
+}
+
+
+
+/* footer */
+footer{
+    background-color: #c8102e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+  color: #FFFFFF; 
+  text-decoration: underline; 
+}
+
+footer a:hover {
+  color: #000000; 
+}
+
+/*video*/
+.video-embed{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 06px 16px rgba(0,0,0,0.1);
+}
+
+.video-embed iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
